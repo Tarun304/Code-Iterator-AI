@@ -1,0 +1,13 @@
+streamlit
+fastapi[all]
+uvicorn
+httpx
+python-dotenv
+loguru
+udiff
+pydantic
+langchain
+langchain-google-genai
+google-generativeai
+langgraph
+streamlit-ace
