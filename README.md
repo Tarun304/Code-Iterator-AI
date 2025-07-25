@@ -60,11 +60,11 @@ A modern, AI-powered tool for iterative code improvement, featuring a user-frien
 
 ```mermaid
 flowchart TD
-    A[User (Web Browser)] -->|HTTP| B[Streamlit Frontend (src/app/streamlit_app.py)]
-    B -->|REST API| C[FastAPI Backend (src/api/)]
-    C --> D[Code Iterator Orchestrator (src/backend/code_iterator.py)]
-    D --> E[LLM Service (src/backend/llm_service.py)]
-    D --> F[Diff Service (src/backend/diff_service.py)]
+    A["User (Web Browser)"] -->|HTTP| B["Streamlit Frontend (src/app/streamlit_app.py)"]
+    B -->|REST API| C["FastAPI Backend (src/api/)"]
+    C --> D["Code Iterator Orchestrator (src/backend/code_iterator.py)"]
+    D --> E["LLM Service (src/backend/llm_service.py)"]
+    D --> F["Diff Service (src/backend/diff_service.py)"]
     E -->|AI Suggestions| D
     F -->|Diff Results| D
     D -->|Results| C
